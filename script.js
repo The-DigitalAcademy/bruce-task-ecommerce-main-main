@@ -75,6 +75,7 @@ var DataAarry = document.getElementById('DataAarry')
 
 var ProudctAll = document.getElementById('ProudctAll')
 
+
 function addproduct(i) {
   DataAarry = document.getElementById('DataAarry')
   showscreen .push(productsState[i])
@@ -132,6 +133,7 @@ function displayscreen() {
                 ${'<span>*</span>'.repeat(showscreen[i].rates)}
               </div>
               <div class="product__price">R <span>${showscreen [i].price}</span></div>  
+              <button onclick="removeAll(${i})">remove</button></h1> 
           </div>
           
     `
@@ -140,6 +142,27 @@ function displayscreen() {
   }
   DataAarry.innerHTML = showscreen .length
 }
+
+function remove(i){
+  showscreen.splice(i,1)
+
+  screenAll();
+}
+
+function screenAll() {
+  var ProudctAll = document.getElementById('ProudctAll')
+
+  var removeAll = document.getElementById('removeAll')
+
+  removeAll.innerHTML = ''
+
+  for (let i = 0; i < showscreen.length; i ++ ) {
+    removeAll.innerHTML += `<h1>${showscreen[i]} <button onclick="removeAll(${i})">remove</button></h1> `
+    
+  }
+}
+
+screenAll();
 
 Productapprove()
 displayscreen() 
