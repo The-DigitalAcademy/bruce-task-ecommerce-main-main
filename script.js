@@ -75,6 +75,8 @@ var DataAarry = document.getElementById('DataAarry')
 
 var ProudctAll = document.getElementById('ProudctAll')
 
+var totalScreen = document.getElementById('totalScreen')
+
 
 function addproduct(i) {
   DataAarry = document.getElementById('DataAarry')
@@ -134,7 +136,7 @@ function displayscreen() {
               </div>
               <div class="product__price">R <span>${showscreen [i].price}</span></div>  
               <button onclick="removeAll(${i})">remove</button></h1> 
-              <button onclick="totalScreen(${i})">Total R:</button><
+              <button onclick="totalScreen(${i})">Total Number : R</button>
           </div>
           
     `
@@ -146,11 +148,19 @@ function displayscreen() {
 
 function removeAll(i){
   showscreen.splice(i,1)
-  totalScreen.push[i]
 
   Productapprove()
 displayscreen() 
  
+}
+
+function totalScreen() {
+  showscreen.push()
+
+  for (let showscreen= 0;  showscreen < array.length; showscreen++) {
+    var element = array[showscreen];
+    
+  }
 }
 
 Productapprove()
