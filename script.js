@@ -140,29 +140,19 @@ function displayscreen() {
     
     
   }
-  DataAarry.innerHTML = showscreen .length
+  DataAarry.innerHTML = showscreen.length
 }
 
-function remove(i){
+function removeAll(i){
   showscreen.splice(i,1)
 
-  screenAll();
+  Productapprove()
+displayscreen() 
+ 
 }
 
-function screenAll() {
-  var ProudctAll = document.getElementById('ProudctAll')
 
-  var removeAll = document.getElementById('removeAll')
 
-  removeAll.innerHTML = ''
-
-  for (let i = 0; i < showscreen.length; i ++ ) {
-    removeAll.innerHTML += `<h1>${showscreen[i]} <button onclick="removeAll(${i})">remove</button></h1> `
-    
-  }
-}
-
-screenAll();
 
 Productapprove()
 displayscreen() 
