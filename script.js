@@ -75,9 +75,9 @@ var DataAarry = document.getElementById('DataAarry')
 
 var ProudctAll = document.getElementById('ProudctAll')
 
-function addproduct() {
+function addproduct(i) {
   DataAarry = document.getElementById('DataAarry')
-  showscreen .push(DataAarry)
+  showscreen .push(productsState[i])
 
   Productapprove()
 displayscreen()
@@ -104,7 +104,7 @@ function Productapprove() {
                 ${'<span>*</span>'.repeat(productsState[i].rates)}
               </div>
               <div class="product__price">R <span>${productsState[i].price}</span></div> 
-                <button onclick="addproduct()">+ ADD TO CART</button> 
+                <button onclick="addproduct(${i})">+ ADD TO CART</button> 
           </div>
           
     `
@@ -116,22 +116,22 @@ function Productapprove() {
 function displayscreen() {
   ProudctAll.innerHTML = ""
   
-  // loop into productsState and display
-  for (let i = 0; i <productsState.length; i++) {
+  // for the loop into productAll and display
+  for (let i = 0; i <showscreen.length; i++) {
     ProudctAll.innerHTML +=  `
     
     <div class="product">
         <div class="product__img">
             <img
-              src=${productsState[i].image}
+              src=${showscreen[i].image}
               alt=""
             />
         </div>
-            <div class="product__name">${productsState[i].name}</div>
+            <div class="product__name">${showscreen[i].name}</div>
               <div class="product__rate">
-                ${'<span>*</span>'.repeat(productsState[i].rates)}
+                ${'<span>*</span>'.repeat(showscreen[i].rates)}
               </div>
-              <div class="product__price">R <span>${productsState [i].price}</span></div>  
+              <div class="product__price">R <span>${showscreen [i].price}</span></div>  
           </div>
           
     `
