@@ -67,6 +67,7 @@ var productsState = [
   },
 ]
 
+
 show = []
 
 var products = document.getElementById('products')
