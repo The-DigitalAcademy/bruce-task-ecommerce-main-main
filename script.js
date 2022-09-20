@@ -134,6 +134,7 @@ function displayscreen() {
               </div>
               <div class="product__price">R <span>${showscreen [i].price}</span></div>  
               <button onclick="removeAll(${i})">remove</button></h1> 
+              <button onclick="totalScreen(${i})">Total R:</button><
           </div>
           
     `
@@ -145,6 +146,7 @@ function displayscreen() {
 
 function removeAll(i){
   showscreen.splice(i,1)
+  totalScreen.push[i]
 
   Productapprove()
 displayscreen() 
