@@ -67,8 +67,7 @@ var productsState = [
   },
 ]
 
-
-show = []
+showscreen = []
 
 var products = document.getElementById('products')
 
@@ -78,7 +77,7 @@ var ProudctAll = document.getElementById('ProudctAll')
 
 function addproduct() {
   DataAarry = document.getElementById('DataAarry')
-  show.push(DataAarry)
+  showscreen .push(DataAarry)
 
   Productapprove()
 displayscreen()
@@ -118,28 +117,28 @@ function displayscreen() {
   ProudctAll.innerHTML = ""
   
   // loop into productsState and display
-  for (let i = 0; i <show.length; i++) {
+  for (let i = 0; i <productsState.length; i++) {
     ProudctAll.innerHTML +=  `
     
     <div class="product">
         <div class="product__img">
             <img
-              src=${show[i].image}
+              src=${productsState[i].image}
               alt=""
             />
         </div>
-            <div class="product__name">${show[i].name}</div>
+            <div class="product__name">${productsState[i].name}</div>
               <div class="product__rate">
-                ${'<span>*</span>'.repeat(show[i].rates)}
+                ${'<span>*</span>'.repeat(productsState[i].rates)}
               </div>
-              <div class="product__price">R <span>${show[i].price}</span></div>  
+              <div class="product__price">R <span>${productsState [i].price}</span></div>  
           </div>
           
     `
     
     
   }
-  DataAarry.innerHTML = show.length
+  DataAarry.innerHTML = showscreen .length
 }
 
 Productapprove()
