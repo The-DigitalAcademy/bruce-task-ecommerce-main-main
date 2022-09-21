@@ -136,7 +136,7 @@ function displayscreen() {
                 ${'<span>*</span>'.repeat(showscreen[i].rates)}
               </div>
               <div class="product__price">R <span>${showscreen [i].price}</span></div>  
-              <button onclick="Clear(${i})">Clear</button></h1> 
+              <button onclick="RemoveAll(${i})">RemoveAll</button></h1> 
               <button onclick="totalScreen(${i})">Total Number : R</button>
           </div>
           
