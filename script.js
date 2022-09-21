@@ -155,12 +155,16 @@ displayscreen()
 }
 
 function totalScreen() {
-  showscreen.push()
+  totalScreen = document.getElementById('totalScreen')
 
-  for (let showscreen= 0;  showscreen < array.length; showscreen++) {
-    var element = array[showscreen];
-    
-  }
+  showscreen .push(productsState[i])  
+}
+
+totalScreen.innerHTML = showscreen.length
+
+function calculate() {
+  TotalNumber = 0
+  
 }
 
 Productapprove()
