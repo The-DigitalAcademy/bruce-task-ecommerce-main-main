@@ -117,7 +117,7 @@ function Productapprove() {
     
   }
 }
-
+// function into the displayscreen
 function displayscreen() {
   ProudctAll.innerHTML = ""
   
@@ -145,9 +145,11 @@ function displayscreen() {
     
   
   }
+// for button showscreen
   dataAarry.innerHTML = showscreen.length;
 }
 
+// function into the remove
 function RemoveAll(i){
   showscreen.splice(i,1)
 
@@ -156,14 +158,14 @@ displayscreen()
  
 }
 
-
+// for loop into the length
 totalscreen.innerHTML = showscreen.length;
 
 // calculate into the 
 function calculate() {
   let total = 0;
   
-
+// for the loop into showscreen
   for (let i = 0; i < showscreen.length; [i] ) {
     
     total += Number(showscreen[i].price);
@@ -174,6 +176,7 @@ function calculate() {
   
 }
 
+// for the displayscreen into ()
 Productapprove()
 displayscreen() 
 calculate()
