@@ -71,19 +71,20 @@ showscreen = []
 
 var products = document.getElementById('products')
 
-var DataAarry = document.getElementById('DataAarry')
+var dataAarry = document.getElementById('dataAarry')
 
 var ProudctAll = document.getElementById('ProudctAll')
 
-var totalScreen = document.getElementById('totalScreen')
+var totalscreen = document.getElementById('totalscreen')
 
 // function into the showAll
 function addproduct(i) {
-  DataAarry = document.getElementById('DataAarry')
-  showscreen .push(productsState[i])
+  dataAarry = document.getElementById('dataAarry')
+  showscreen.push(productsState[i])
 
   Productapprove()
 displayscreen()
+calculate()
 }
 
 // function the into productapprove 
@@ -136,15 +137,15 @@ function displayscreen() {
                 ${'<span>*</span>'.repeat(showscreen[i].rates)}
               </div>
               <div class="product__price">R <span>${showscreen [i].price}</span></div>  
-              <button onclick="RemoveAll(${i})">RemoveAll</button></h1> 
-              <button onclick="totalScreen(${i})">Total Number : R</button>
+              <button onclick="RemoveAll(${i})">-RemoveAll</button></h1> 
+            
           </div>
           
     `
     
   
   }
-  DataAarry.innerHTML = showscreen.length
+  dataAarry.innerHTML = showscreen.length;
 }
 
 function RemoveAll(i){
@@ -155,23 +156,27 @@ displayscreen()
  
 }
 
-function totalScreen() {
-  totalScreen = document.getElementById('totalScreen')
 
-  showscreen .push(productsState[i])  
-}
+totalscreen.innerHTML = showscreen.length;
 
-totalScreen.innerHTML = showscreen.length
-
+// calculate into the 
 function calculate() {
-  TotalNumber = 0
-  productsState = 0
-  showscreen = 0
+  let total = 0;
+  
 
+  for (let i = 0; i < showscreen.length; [i] ) {
+    
+    total += Number(showscreen[i].price);
+
+    totalscreen.innerHTML = total
+
+  }
+  
 }
 
 Productapprove()
 displayscreen() 
+calculate()
 
 
 
