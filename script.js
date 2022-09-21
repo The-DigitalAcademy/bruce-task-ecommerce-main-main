@@ -1,4 +1,4 @@
-// PRODUCTS VARIABLE
+// PRODUCTS VARIABLE html and array
 var productsState = [
   {
     id: 1,
@@ -77,7 +77,7 @@ var ProudctAll = document.getElementById('ProudctAll')
 
 var totalScreen = document.getElementById('totalScreen')
 
-
+// function into the showAll
 function addproduct(i) {
   DataAarry = document.getElementById('DataAarry')
   showscreen .push(productsState[i])
@@ -86,9 +86,10 @@ function addproduct(i) {
 displayscreen()
 }
 
+// function the into productapprove 
 function Productapprove() {
 
- // DISPLAY PRODUCTS IN HOME PAGE
+ // DISPLAYScreen into the PRODUCTS IN HOME PAGE
   products.innerHTML = ""
   
   // loop into productsState and display
@@ -164,7 +165,15 @@ totalScreen.innerHTML = showscreen.length
 
 function calculate() {
   TotalNumber = 0
-  
+  productsState = 0
+
+
+
+  for (let showscreen = 0; showscreen < array.length; showscreen++) {
+    var element = array[showscreen];
+    
+  }
+
 }
 
 Productapprove()
