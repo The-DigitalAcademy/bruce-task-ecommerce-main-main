@@ -161,18 +161,12 @@ function totalScreen() {
   showscreen .push(productsState[i])  
 }
 
-totalScreen.innerHTML = showscreen.length ([i])
+totalScreen.innerHTML = showscreen.length
 
 function calculate() {
   TotalNumber = 0
   productsState = 0
-
-
-
-  for (let showscreen = 0; showscreen < array.length; showscreen++) {
-    var element = array[showscreen];
-    
-  }
+  showscreen = 0
 
 }
 
