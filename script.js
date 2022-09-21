@@ -136,7 +136,7 @@ function displayscreen() {
                 ${'<span>*</span>'.repeat(showscreen[i].rates)}
               </div>
               <div class="product__price">R <span>${showscreen [i].price}</span></div>  
-              <button onclick="removeAll(${i})">remove</button></h1> 
+              <button onclick="Clear(${i})">Clear</button></h1> 
               <button onclick="totalScreen(${i})">Total Number : R</button>
           </div>
           
@@ -147,7 +147,7 @@ function displayscreen() {
   DataAarry.innerHTML = showscreen.length
 }
 
-function removeAll(i){
+function Clear(i){
   showscreen.splice(i,1)
 
   Productapprove()
