@@ -142,12 +142,12 @@ function displayscreen() {
           
     `
     
-    
+  
   }
   DataAarry.innerHTML = showscreen.length
 }
 
-function Clear(i){
+function RemoveAll(i){
   showscreen.splice(i,1)
 
   Productapprove()
@@ -161,7 +161,7 @@ function totalScreen() {
   showscreen .push(productsState[i])  
 }
 
-totalScreen.innerHTML = showscreen.length
+totalScreen.innerHTML = showscreen.length ([i])
 
 function calculate() {
   TotalNumber = 0
