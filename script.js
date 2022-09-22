@@ -75,7 +75,7 @@ var dataAarry = document.getElementById('dataAarry')
 
 var ProudctAll = document.getElementById('ProudctAll')
 
-var totalscreen = document.getElementById('totalscreen')
+var addtotal = document.getElementById('addtotal')
 
 // function into the showAll
 function addproduct(i) {
@@ -159,17 +159,17 @@ displayscreen()
 }
 
 // for loop into the length
-totalscreen.innerHTML = showscreen.length;
+addtotal.innerHTML = showscreen.length;
 
 // calculate into the 
 function calculate() {
   let total = 0;
-  
+
   for (let i = 0; i < showscreen.length; [i] ) {
     
     total += Number(showscreen[i].price);
 
-    totalscreen.innerHTML = total
+    addtotal.innerHTML = total
 
   }
   
