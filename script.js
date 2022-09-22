@@ -87,7 +87,7 @@ displayscreen()
 calculate()
 }
 
-// function the into productapprove 
+// function the into product
 function Productapprove() {
 
  // DISPLAYScreen into the PRODUCTS IN HOME PAGE
@@ -165,7 +165,6 @@ totalscreen.innerHTML = showscreen.length;
 function calculate() {
   let total = 0;
   
-// for the loop into showscreen
   for (let i = 0; i < showscreen.length; [i] ) {
     
     total += Number(showscreen[i].price);
@@ -179,7 +178,6 @@ function calculate() {
 // for the displayscreen into ()
 Productapprove()
 displayscreen() 
-calculate()
 
 
 
