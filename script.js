@@ -146,7 +146,7 @@ function displayscreen() {
   
   }
 // for button showscreen
-  dataAarry.innerHTML = showscreen.length;
+  dataAarry.innerHTML = showscreen.length
 }
 
 // function into the remove
@@ -159,21 +159,22 @@ displayscreen()
 }
 
 // for loop into the length
-addtotal.innerHTML = showscreen.length;
+addtotal.innerHTML = showscreen.length
 
 // calculate into the 
-function calculate() {
-  let total = 0;
+// function calculate() {
+//    total = 0;
 
-  for (let i = 0; i < showscreen.length; [i] ) {
+//   for (let i = 0; i < showscreen.length; [i] ) {
     
-    total += Number(showscreen[i].price);
+//     total += Number(showscreen[i].price)
 
-    addtotal.innerHTML = total
+//     addtotal.innerHTML = total
 
-  }
+//   }
   
-}
+
+// }
 
 // for the displayscreen into ()
 Productapprove()
