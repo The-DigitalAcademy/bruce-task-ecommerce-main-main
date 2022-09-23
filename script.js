@@ -155,6 +155,7 @@ function RemoveAll(i){
 
   Productapprove()
 displayscreen() 
+calculate()
  
 }
 
@@ -162,19 +163,20 @@ displayscreen()
 addtotal.innerHTML = showscreen.length
 
 // calculate into the 
-// function calculate() {
-//    total = 0;
 
-//   for (let i = 0; i < showscreen.length; [i] ) {
-    
-//     total += Number(showscreen[i].price)
+function calculate() {
 
-//     addtotal.innerHTML = total
-
-//   }
   
+  total = 0;
 
-// }
+  for (let i = 0; i < showscreen.length; i++) {
+    
+      total += showscreen[i].price;
+    
+  }
+  
+    document.getElementById('addtotal').innerHTML = total;
+}
 
 // for the displayscreen into ()
 Productapprove()
