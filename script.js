@@ -164,7 +164,7 @@ addtotal.innerHTML = showscreen.length
 
 // calculate into the 
 
-function calculate() {
+function calculate() {``
 
   
   total = 0;
