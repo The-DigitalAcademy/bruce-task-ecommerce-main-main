@@ -77,6 +77,8 @@ var ProudctAll = document.getElementById('ProudctAll')
 
 var addtotal = document.getElementById('addtotal')
 
+var bin = document.getElementById('bin')
+
 // function into the showAll
 function addproduct(i) {
   dataAarry = document.getElementById('dataAarry')
@@ -176,6 +178,10 @@ function calculate() {``
   }
   
     document.getElementById('addtotal').innerHTML = total;
+
+    document.getElementById('bin').innerHTML = price;
+
+    
 }
 
 // for the displayscreen into ()
