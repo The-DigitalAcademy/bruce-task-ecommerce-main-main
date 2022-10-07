@@ -191,14 +191,17 @@ function AddtoStorage() {
   // JSON.stringify change array to string
   var proof  = JSON.stringify(showscreen)
   localStorage.setItem('showscreen', proof)
-  console.log(proof)
+
+  
+
+  showscreen.innerHTML = ""
 
   document.getElementById('showscreen')
   .innerHTML = showscreen.length
 }
 
 // function read local storage and add it proofscreen
-function readLocalStorage() {
+function readStorage() {
     var proof = JSON.parse(localStorage.getItem('showscreen'))
     showscreen = proof
 }
