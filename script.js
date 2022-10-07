@@ -158,15 +158,16 @@ function RemoveAll(i){
   Productapprove()
 displayscreen() 
 calculate()
+readLocalStorage()
  
 }
 
 // for loop into the length
 addtotal.innerHTML = showscreen.length
 
-// calculate into the 
+// calculate into the loop
 
-function calculate() {``
+function calculate() {
 
   
   total = 0;
@@ -175,7 +176,7 @@ function calculate() {``
     
       total += showscreen[i].price;
     
-  }
+  } 
   
     document.getElementById('addtotal').innerHTML = total;
 
@@ -184,9 +185,29 @@ function calculate() {``
     
 }
 
+// function local storage link to string
+
+function AddtoStorage() {
+  // JSON.stringify change array to string
+  var proof  = JSON.stringify(showscreen)
+  localStorage.setItem('showscreen', proof)
+  console.log(proof)
+
+  document.getElementById('showscreen')
+  .innerHTML = showscreen.length
+}
+
+// function read local storage and add it proofscreen
+function readLocalStorage() {
+    var proof = JSON.parse(localStorage.getItem('showscreen'))
+    showscreen = proof
+}
+
+
 // for the displayscreen into ()
 Productapprove()
-displayscreen() 
+displayscreen()
+AddtoStorage()
 
 
 
