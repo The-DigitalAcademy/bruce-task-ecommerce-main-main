@@ -207,11 +207,17 @@ function readStorage() {
 }
 
 
-// for the displayscreen into ()
+// for the call to displayscreen ()
 Productapprove()
 displayscreen()
 AddtoStorage()
 
 
+function automatic() {
+  showscreen.push(i)
+  splice(i,1)
+}
+
+automatic();
 
 
