@@ -144,8 +144,6 @@ function displayscreen() {
           </div>
           
     `
-    
-  
   }
 // for button showscreen
   dataAarry.innerHTML = showscreen.length
@@ -191,7 +189,6 @@ function AddtoStorage() {
   // JSON.stringify change array to string
   var proof  = JSON.stringify(showscreen)
   localStorage.setItem('showscreen', proof)
-
   
 
   showscreen.innerHTML = ""
@@ -207,6 +204,8 @@ function readStorage() {
 }
 
 
+
+
 // for the call to displayscreen ()
 Productapprove()
 displayscreen()
@@ -219,5 +218,6 @@ function automatic() {
 }
 
 automatic();
+readLocalStorage()
 
 
