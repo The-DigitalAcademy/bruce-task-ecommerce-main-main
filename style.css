@@ -292,7 +292,7 @@ footer {
   padding: 3px;
   background-color: rgb(38, 212, 145);
   color: white;
-  background-color: #000000;
+  background-color: hsl(0, 0%, 0%);
 }
 
 .svgx{
@@ -305,4 +305,11 @@ border: auto;
   margin-right: 100%;
 }
 
+.frame{
+  background-color: #fff;
+  color: #000000;
+  align-items: center;
+  transition: var(--transition);
+  gap: 0.5rem;
+}
 
