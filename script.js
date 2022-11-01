@@ -219,5 +219,6 @@ function automatic() {
 
 automatic();
 readLocalStorage()
+show();
 
 
