@@ -315,3 +315,8 @@ border: auto;
   gap: 0.5rem;
 }
 
+.span{
+  background-color: white;
+  color: #000000;
+}
+
