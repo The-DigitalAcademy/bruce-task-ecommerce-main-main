@@ -217,4 +217,10 @@ automatic();
 readLocalStorage()
 show();
 
+function remove() {
+  shows.push(i)
+  splice(i,1)
+}
+remove();
+
 
