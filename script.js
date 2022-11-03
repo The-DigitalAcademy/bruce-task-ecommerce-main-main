@@ -184,7 +184,6 @@ function calculate() {
 }
 
 // function local storage link to string
-
 function AddtoStorage() {
   // JSON.stringify change array to string
   var proof  = JSON.stringify(showscreen)
