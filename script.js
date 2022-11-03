@@ -203,14 +203,10 @@ function readStorage() {
     showscreen = proof
 }
 
-
-
-
 // for the call to displayscreen ()
 Productapprove()
 displayscreen()
 AddtoStorage()
-
 
 function automatic() {
   showscreen.push(i)
