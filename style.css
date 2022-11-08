@@ -330,3 +330,7 @@ border: auto;
   color: aliceblue;
 }
 
+.p{
+  background-color: #000000;
+  border: bolder;
+}
