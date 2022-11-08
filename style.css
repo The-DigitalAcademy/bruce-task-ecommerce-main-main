@@ -297,17 +297,17 @@ footer {
   color: #000000;
 }
 
-.svgx{
+.svgx {
 align-items: center;
 border: auto;
 }
 
-.p{
+.p {
   align-items: center;
   margin-right: 100%;
 }
 
-.frame{
+.frame {
   background-color: #fff;
   color: #000000;
   align-items: center;
@@ -315,7 +315,7 @@ border: auto;
   gap: 0.5rem;
 }
 
-.span{
+.span {
   background-color: white;
   color: #000000;
 }
@@ -325,7 +325,7 @@ border: auto;
   color: #000000;
 }
 
-.p{
+.p {
   background-color: #000000;
   color: aliceblue;
 }
