@@ -334,3 +334,10 @@ border: auto;
   background-color: #000000;
   border: bolder;
 }
+
+.text{
+  background-color: white;
+  display: flex;
+  color: #000000;
+
+}
